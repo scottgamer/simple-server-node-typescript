@@ -1,0 +1,23 @@
+{
+  "name": "simple-server-node-typescript",
+  "version": "1.0.0",
+  "description": "Simple Nodejs server using Typescript",
+  "main": "./dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottgamer/simple-server-node-typescript.git"
+  },
+  "author": "Richard Munoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottgamer/simple-server-node-typescript/issues"
+  },
+  "homepage": "https://github.com/scottgamer/simple-server-node-typescript#readme",
+  "dependencies": {
+    "tsc-watch": "^4.2.3",
+    "typescript": "^3.8.3"
+  }
+}
