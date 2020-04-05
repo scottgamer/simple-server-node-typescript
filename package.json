@@ -4,6 +4,7 @@
   "description": "Simple Nodejs server using Typescript",
   "main": "./dist/server.js",
   "scripts": {
+    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
