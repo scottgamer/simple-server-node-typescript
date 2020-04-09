@@ -4,9 +4,9 @@ import express from "express";
 // import dotenv from "dotenv";
 // dotenv.config();
 
-import { applyMiddleware } from "./utils";
+import { applyMiddleware, applyRoutes } from "./utils";
 import middleware from "./middleware";
-// import routes from "./routes";
+import routes from "./routes";
 // import config from "./config/config";
 
 // mongoose
@@ -17,7 +17,7 @@ import middleware from "./middleware";
 //   .then(() => {
     const app = express();
     applyMiddleware(middleware, app);
-    // applyRoutes(routes, app);
+    applyRoutes(routes, app);
 
     const { PORT = 3000 } = process.env;
     app.listen(PORT, () => {
