@@ -6,4 +6,9 @@ export default [
     method: "get",
     handler: [weatherController.getHello],
   },
+  {
+    path: "/weather",
+    method: "get",
+    handler: [weatherController.getCurrentWeatherByParam],
+  },
 ];
