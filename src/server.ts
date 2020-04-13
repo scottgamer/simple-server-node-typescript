@@ -1,8 +1,8 @@
 import express from "express";
 // import mongoose from "mongoose";
 
-// import dotenv from "dotenv";
-// dotenv.config();
+import dotenv from "dotenv";
+dotenv.config();
 
 import { applyMiddleware, applyRoutes } from "./utils";
 import middleware from "./middleware";
@@ -15,13 +15,13 @@ import routes from "./routes";
 //     useUnifiedTopology: true
 //   })
 //   .then(() => {
-    const app = express();
-    applyMiddleware(middleware, app);
-    applyRoutes(routes, app);
+const app = express();
+applyMiddleware(middleware, app);
+applyRoutes(routes, app);
 
-    const { PORT = 3000 } = process.env;
-    app.listen(PORT, () => {
-      console.log(`Server is running on ${PORT}`);
-    });
-  // })
-  // .catch(error => console.log(error));
+const { PORT = 3000 } = process.env;
+app.listen(PORT, () => {
+  console.log(`Server is running on ${PORT}`);
+});
+// })
+// .catch(error => console.log(error));
